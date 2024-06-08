@@ -1,0 +1,8 @@
+
+12:05:29 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+
+12:05:32 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+
+12:05:36 [browserstack_sdk.__init__][INFO] - Handling session close
+
+12:05:36 [browserstack_sdk.__init__][INFO] - All done!

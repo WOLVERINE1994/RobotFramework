@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.3 on win32)" generated="2024-06-08T22:17:38.839229" rpa="false" schemaversion="5">
+<suite id="s1" name="Website Testing" source="C:\Users\prate\Downloads\robot-browserstack-sdkLatest\robot-browserstack-sdk\tests\UI\website_testing.robot">
+<kw name="Setup for url" owner="common_ui" type="SETUP">
+<kw name="SuiteSetup" owner="common_ui">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Remove Files" owner="OperatingSystem">
+<msg time="2024-06-08T22:17:39.193597" level="INFO" html="true">Removed file '&lt;a href="file://C:\Users\prate\Downloads\robot-browserstack-sdkLatest\selenium-screenshot-1.png"&gt;C:\Users\prate\Downloads\robot-browserstack-sdkLatest\selenium-screenshot-1.png&lt;/a&gt;'.</msg>
+<msg time="2024-06-08T22:17:39.193597" level="INFO" html="true">Removed file '&lt;a href="file://C:\Users\prate\Downloads\robot-browserstack-sdkLatest\selenium-screenshot-2.png"&gt;C:\Users\prate\Downloads\robot-browserstack-sdkLatest\selenium-screenshot-2.png&lt;/a&gt;'.</msg>
+<arg>${OUTPUTDIR}/selenium-screenshot-*.png</arg>
+<doc>Uses `Remove File` to remove multiple files one-by-one.</doc>
+<status status="PASS" start="2024-06-08T22:17:39.187989" elapsed="0.005608"/>
+</kw>
+<arg>Remove Files</arg>
+<arg>${OUTPUTDIR}/selenium-screenshot-*.png</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-06-08T22:17:39.187989" elapsed="0.006721"/>
+</kw>
+<kw name="Remove Files" owner="OperatingSystem">
+<msg time="2024-06-08T22:17:39.194710" level="INFO" html="true">File '&lt;a href="file://C:\Users\prate\Downloads\robot-browserstack-sdkLatest\customLibraries\__pycache__\*"&gt;C:\Users\prate\Downloads\robot-browserstack-sdkLatest\customLibraries\__pycache__\*&lt;/a&gt;' does not exist.</msg>
+<arg>customLibraries/__pycache__/*</arg>
+<doc>Uses `Remove File` to remove multiple files one-by-one.</doc>
+<status status="PASS" start="2024-06-08T22:17:39.194710" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:39.194710" level="INFO">Opening browser 'Chrome' to base url 'https://www.mikesharder.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-08T22:17:39.194710" elapsed="7.647747"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-06-08T22:17:46.842457" elapsed="0.097325"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:47.012411" level="INFO">Current location is 'https://www.mikesharder.com/'.</msg>
+<arg>${url}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-06-08T22:17:46.940631" elapsed="0.071780"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-06-08T22:17:47.013518" level="INFO">${ENVIRONMENT} = web</msg>
+<arg>${ENVIRONMENT}</arg>
+<arg>${env}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-06-08T22:17:47.013518" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-06-08T22:17:52.014758" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-06-08T22:17:47.014026" elapsed="5.000732"/>
+</kw>
+<kw name="Fill the Date of Birth" owner="common_ui">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Additional Steps for Contact_Form" owner="common_ui">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.340343" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-08T22:17:57.345285" level="FAIL">Element 'xpath=//button[@aria-label='close modal']' not visible after 5 seconds.</msg>
+<arg>${close_privacy}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2024-06-08T22:17:52.019262" elapsed="5.327536">Element 'xpath=//button[@aria-label='close modal']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${close_privacy}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.346798" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.346798" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-08T22:17:52.019262" elapsed="5.327536">Element 'xpath=//button[@aria-label='close modal']' not visible after 5 seconds.</status>
+</kw>
+<arg>Additional Steps for Contact_Form</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-06-08T22:17:52.014758" elapsed="5.332040"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.346798" level="INFO">Typing text '1' into text field 'xpath=//input[@id='ag-day']'.</msg>
+<arg>${days}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-08T22:17:57.346798" elapsed="0.136214"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.483012" level="INFO">Typing text '1' into text field 'xpath=//input[@id='ag-month']'.</msg>
+<arg>${months}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-08T22:17:57.483012" elapsed="0.090418"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.573430" level="INFO">Typing text '2000' into text field 'xpath=//input[@id='ag-year']'.</msg>
+<arg>${years}</arg>
+<arg>2000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-08T22:17:57.573430" elapsed="0.089741"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Additional Steps for WC" owner="common_ui">
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.663171" level="INFO">Selecting checkbox 'id:ag-remember'.</msg>
+<msg time="2024-06-08T22:17:57.834645" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-06-08T22:17:57.836967" level="FAIL">Checkbox with locator 'id:ag-remember' not found.</msg>
+<arg>${checkbox}</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="FAIL" start="2024-06-08T22:17:57.663171" elapsed="0.174360">Checkbox with locator 'id:ag-remember' not found.</status>
+</kw>
+<kw name="Checkbox Should Be Selected" owner="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.837531" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${warning_message}</var>
+<arg>${warning}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.837531" elapsed="0.005568"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${warning_message}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.843099" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<var>${consent}</var>
+<arg>${consent_data}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.843099" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${consent}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-06-08T22:17:57.843099" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-06-08T22:17:57.663171" elapsed="0.179928">Checkbox with locator 'id:ag-remember' not found.</status>
+</kw>
+<arg>Additional Steps for WC</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-06-08T22:17:57.663171" elapsed="0.181831"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.845002" level="INFO">Clicking button 'xpath=//input[@id='ag-confirm']'.</msg>
+<arg>${confirm-button}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-08T22:17:57.845002" elapsed="0.139724"/>
+</kw>
+<status status="PASS" start="2024-06-08T22:17:52.014758" elapsed="5.969968"/>
+</kw>
+<arg>${url}</arg>
+<arg>${env}</arg>
+<status status="PASS" start="2024-06-08T22:17:39.187989" elapsed="18.796737"/>
+</kw>
+<arg>${url_mikeshared}</arg>
+<arg>${ENVIRONMENT}</arg>
+<status status="PASS" start="2024-06-08T22:17:39.187989" elapsed="18.796737"/>
+</kw>
+<test id="s1-t1" name="Existance of Limonada flavors" line="7">
+<kw name="Verify that the Page Should Contain Flavour" owner="website_testing_steps">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:57.987030" level="INFO">Verifying element 'xpath=(//a[contains(@class,'')][normalize-space()='Flavors'])[1]' contains exact text 'FLAVORS'.</msg>
+<arg>${flavor}</arg>
+<arg>FLAVORS</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-08T22:17:57.987030" elapsed="0.035478"/>
+</kw>
+<arg>${flavor}</arg>
+<status status="PASS" start="2024-06-08T22:17:57.987030" elapsed="0.035478"/>
+</kw>
+<kw name="Verify that the Page should contain Innovation" owner="website_testing_steps">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:58.024493" level="INFO">Verifying element 'xpath=(//a[contains(@class,'')][normalize-space()='Innovation'])[1]' contains exact text 'INNOVATION'.</msg>
+<arg>${Innovation}</arg>
+<arg>INNOVATION</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-08T22:17:58.024493" elapsed="0.039375"/>
+</kw>
+<arg>${Innovation}</arg>
+<status status="PASS" start="2024-06-08T22:17:58.023942" elapsed="0.039926"/>
+</kw>
+<kw name="Verify that the Page should contains Find tab" owner="website_testing_steps">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:58.063868" level="INFO">Verifying element 'xpath=//header[@role='banner']//a[normalize-space()='Find']' contains exact text 'FIND'.</msg>
+<arg>${Find}</arg>
+<arg>FIND</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-08T22:17:58.063868" elapsed="0.043417"/>
+</kw>
+<arg>${Find}</arg>
+<status status="PASS" start="2024-06-08T22:17:58.063868" elapsed="0.043417"/>
+</kw>
+<kw name="Verify that the Page should contains contact tab" owner="website_testing_steps">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:58.107285" level="INFO">Verifying element 'xpath=//header[@role='banner']//a[normalize-space()='Contact']' contains exact text 'CONTACT'.</msg>
+<arg>${contact}</arg>
+<arg>CONTACT</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-08T22:17:58.107285" elapsed="0.045877"/>
+</kw>
+<arg>${contact}</arg>
+<status status="PASS" start="2024-06-08T22:17:58.107285" elapsed="0.045877"/>
+</kw>
+<kw name="Verify that the Page should contains FAQ tab" owner="website_testing_steps">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:58.155303" level="INFO">Verifying element 'xpath=//header[@role='banner']//a[normalize-space()='FAQ']' contains exact text 'FAQ'.</msg>
+<arg>${faq}</arg>
+<arg>FAQ</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-08T22:17:58.155303" elapsed="0.044628"/>
+</kw>
+<arg>${faq}</arg>
+<status status="PASS" start="2024-06-08T22:17:58.155303" elapsed="0.044628"/>
+</kw>
+<kw name="Click on the Flavour" owner="website_testing_steps">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:17:58.199931" level="INFO">Clicking element 'xpath=(//a[contains(@class,'')][normalize-space()='Flavors'])[1]'.</msg>
+<arg>${flavor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-08T22:17:58.199931" elapsed="1.335795"/>
+</kw>
+<arg>${flavor}</arg>
+<status status="PASS" start="2024-06-08T22:17:58.199931" elapsed="1.335795"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${lemonade}</arg>
+<arg>timeout=20</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-08T22:17:59.535726" elapsed="0.174792"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>${lemonade}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-06-08T22:17:59.710518" elapsed="0.469261"/>
+</kw>
+<kw name="Page Should Contain Image" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:18:00.197332" level="INFO">Current page contains image 'xpath=(//img[contains(@src, 'harder-lemonade.png')])[1]'.</msg>
+<arg>${item}</arg>
+<doc>Verifies image identified by ``locator`` is found from current page.</doc>
+<status status="PASS" start="2024-06-08T22:18:00.179779" elapsed="0.017553"/>
+</kw>
+<kw name="Click Image" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:18:00.205338" level="INFO">Clicking image 'xpath=(//img[contains(@src, 'harder-lemonade.png')])[1]'.</msg>
+<arg>${item}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-08T22:18:00.205338" elapsed="1.587148"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${lemoDescription}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-06-08T22:18:01.792486" elapsed="0.095407"/>
+</kw>
+<kw name="Verify the description data of the lemonade" owner="website_testing_steps">
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-06-08T22:18:01.887893" level="INFO">Verifying element 'css:div p.section-desc' contains exact text 'Lemonade with the volume turned up. Lemonade that hits harder.'.</msg>
+<arg>${lemoDescription}</arg>
+<arg>Lemonade with the volume turned up. Lemonade that hits harder.</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-06-08T22:18:01.887893" elapsed="0.044744"/>
+</kw>
+<status status="PASS" start="2024-06-08T22:18:01.887893" elapsed="0.044744"/>
+</kw>
+<kw name="Close Browser session after the end" owner="common_ui" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-08T22:18:01.932637" elapsed="2.445945"/>
+</kw>
+<status status="PASS" start="2024-06-08T22:18:01.932637" elapsed="2.445945"/>
+</kw>
+<tag>REGRESSION</tag>
+<tag>WEB</tag>
+<status status="PASS" start="2024-06-08T22:17:57.984726" elapsed="6.393856"/>
+</test>
+<status status="PASS" start="2024-06-08T22:17:38.842305" elapsed="25.536277"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">REGRESSION</stat>
+<stat pass="1" fail="0" skip="0">WEB</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Website Testing">Website Testing</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
