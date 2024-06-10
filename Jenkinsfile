@@ -12,7 +12,7 @@ pipeline {
                 script {
                     // Run Robot Framework tests with pabot
                     bat '''
-                    cd C:\\Users\\prate\\Downloads\\robot-browserstack-sdkLatest\\robot-browserstack-sdk\\tests\\UI
+                    cd C:\\Users\\Prateek\\Downloads\\robot-browserstack-sdkLatest\\robot-browserstack-sdkLatest\\robot-browserstack-sdkLatest\\robot-browserstack-sdk\\tests\\UI
                     pabot -v ENVIRONMENT:web -i WEB .
                     '''
                 }
