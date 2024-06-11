@@ -13,7 +13,7 @@ ${url}         https://at-dev.whiteclaw.com/en/
 ${url2}         https://au-dev.whiteclaw.com/
 ${url_mikeshared}        https://www.mikesharder.com/
 ${browser_name}         Chrome
-${OUTPUTDIR}        C:/Users/prate/Downloads/robot-browserstack-sdkLatest
+${OUTPUTDIR}        C:/Users/Prateek/Downloads/robot-browserstack-sdkLatest/robot-browserstack-sdkLatest/
 ${timeout}        20
 ${close_privacy}          xpath=//button[@aria-label='close modal']
 *** Keywords ***
@@ -31,7 +31,7 @@ Fill the Date of Birth
     Run keyword And Ignore Error        Additional Steps for Contact_Form
     Input Text    ${days}    1
     Input Text    ${months}    1
-    Input Text   ${years}    2000
+    Input Text   ${years}    1999
     Run Keyword And Ignore Error        Additional Steps for WC
     Click Button     ${confirm-button}
 
