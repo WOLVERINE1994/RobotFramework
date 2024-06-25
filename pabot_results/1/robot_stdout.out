@@ -1,0 +1,38 @@
+
+10:58:23 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+
+10:58:30 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+==============================================================================
+UI                                                                            
+==============================================================================
+UI.Mikes                                                                      
+==============================================================================
+TC04: Valid login on mobile                                           
+10:58:33 [selenium.webdriver.common.selenium_manager][WARNING] - The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry
+
+10:58:33 [browserstack_sdk.__init__][INFO] - Completed setup!
+| PASS |
+------------------------------------------------------------------------------
+TC05: Invalid login check on mobile                                   
+10:59:03 [selenium.webdriver.common.selenium_manager][WARNING] - The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry
+
+10:59:03 [browserstack_sdk.__init__][INFO] - Completed setup!
+| PASS |
+------------------------------------------------------------------------------
+TC06: Limoda page content on mobile                                   
+10:59:33 [selenium.webdriver.common.selenium_manager][WARNING] - The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry
+
+10:59:33 [browserstack_sdk.__init__][INFO] - Completed setup!
+| PASS |
+------------------------------------------------------------------------------
+UI.Mikes                                                              | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+UI                                                                    | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Prateek\Downloads\PROJECTS\browserstack-robot Framework\robot-browserstack-sdkLatest\robot-browserstack-sdkLatest\robot-browserstack-sdkLatest\pabot_results\1\output.xml
+
+11:00:12 [browserstack_sdk.__init__][INFO] - Handling session close
+
+11:00:12 [browserstack_sdk.__init__][INFO] - All done!

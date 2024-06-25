@@ -1,0 +1,26 @@
+
+10:56:18 [browserstack_sdk.__init__][INFO] - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+
+10:56:22 [browserstack_sdk.__init__][INFO] - Setting up for Browserstack, using framework: robot
+==============================================================================
+UI                                                                            
+==============================================================================
+UI.Contact Form :: Filling of the contact details                             
+==============================================================================
+
+10:56:24 [selenium.webdriver.common.selenium_manager][WARNING] - The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry
+
+10:56:24 [browserstack_sdk.__init__][INFO] - Completed setup!
+Navigated to Contact Page on mobile                                   | PASS |
+------------------------------------------------------------------------------
+UI.Contact Form :: Filling of the contact details                     | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+UI                                                                    | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Prateek\Downloads\PROJECTS\browserstack-robot Framework\robot-browserstack-sdkLatest\robot-browserstack-sdkLatest\robot-browserstack-sdkLatest\pabot_results\0\output.xml
+
+10:58:16 [browserstack_sdk.__init__][INFO] - Handling session close
+
+10:58:16 [browserstack_sdk.__init__][INFO] - All done!

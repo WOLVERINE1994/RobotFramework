@@ -1,0 +1,578 @@
+<robot generator="Robot 5.0.1 (Python 3.11.3 on win32)" generated="20240620 10:58:30.114" rpa="false" schemaversion="3">
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">MOBILE</stat>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="UI">UI</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Mikes">UI.Mikes</stat>
+</suite>
+</statistics>
+<suite name="Suites" id="s0"><suite id="s1-s1" name="Mikes 15, iPhone 13, Safari" source="C:\Users\Prateek\Downloads\PROJECTS\browserstack-robot Framework\robot-browserstack-sdkLatest\robot-browserstack-sdkLatest\robot-browserstack-sdkLatest\robot-browserstack-sdk\tests\UI\mikes.robot">
+<test id="s1-s1-t1" name="TC04: Valid login on mobile" line="40">
+<kw name="Open the broswer" library="mikes_steps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${baseurl}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240620 10:58:30.875" level="INFO">Opening browser 'Chrome' to base url 'https://www.mikeshard.com/'.</msg>
+<msg timestamp="20240620 10:58:33.421" level="WARN">The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240620 10:58:33.424" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20240620 10:58:30.865" endtime="20240620 10:58:52.606" />
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240620 10:58:52.613" endtime="20240620 10:58:52.749" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240620 10:58:57.753" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240620 10:58:52.752" endtime="20240620 10:58:57.754" />
+</kw>
+<status status="PASS" starttime="20240620 10:58:30.865" endtime="20240620 10:58:57.754" />
+</kw>
+<kw name="Enter date of birth then submit the age gate and verify the presence of the options" library="mikes_steps">
+<arg>01</arg>
+<arg>01</arg>
+<arg>2000</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-month</arg>
+<arg>${month}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:57.762" level="INFO">Typing text '01' into text field 'id:ag-month'.</msg>
+<status status="PASS" starttime="20240620 10:58:57.762" endtime="20240620 10:58:58.179" />
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-day</arg>
+<arg>${day}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:58.184" level="INFO">Typing text '01' into text field 'id:ag-day'.</msg>
+<status status="PASS" starttime="20240620 10:58:58.183" endtime="20240620 10:58:58.482" />
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-year</arg>
+<arg>${year}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:58.486" level="INFO">Typing text '2000' into text field 'id:ag-year'.</msg>
+<status status="PASS" starttime="20240620 10:58:58.484" endtime="20240620 10:58:58.773" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:ag-confirm</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:58.773" level="INFO">Clicking element 'id:ag-confirm'.</msg>
+<status status="PASS" starttime="20240620 10:58:58.773" endtime="20240620 10:58:59.041" />
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.mikeshard.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20240620 10:58:59.149" level="INFO">Current location is 'https://www.mikeshard.com/'.</msg>
+<status status="PASS" starttime="20240620 10:58:59.044" endtime="20240620 10:58:59.155" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${managecookies-mike}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:59.160" level="INFO">Clicking element 'xpath=//button[@id='onetrust-pc-btn-handler']'.</msg>
+<status status="PASS" starttime="20240620 10:58:59.159" endtime="20240620 10:58:59.405" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${managechoices}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:59.406" level="INFO">Clicking element 'css:button.onetrust-close-btn-handler'.</msg>
+<status status="PASS" starttime="20240620 10:58:59.406" endtime="20240620 10:58:59.718" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${hamburger}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 10:58:59.723" level="INFO">Clicking element 'css:div.hamburger'.</msg>
+<status status="PASS" starttime="20240620 10:58:59.722" endtime="20240620 10:58:59.925" />
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Flavour-tab}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240620 10:58:59.935" endtime="20240620 10:59:00.573" />
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Flavour-tab}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240620 10:59:00.750" level="INFO">Element 'xpath= (//div[@id="navbarNav"]/div/ul/li/a)[1]' is displayed.</msg>
+<status status="PASS" starttime="20240620 10:59:00.578" endtime="20240620 10:59:00.751" />
+</kw>
+<status status="PASS" starttime="20240620 10:58:57.754" endtime="20240620 10:59:00.754" />
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20240620 10:59:00.755" endtime="20240620 10:59:00.919" />
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240620 10:59:00.920" endtime="20240620 10:59:00.921" />
+</kw>
+<tag>MOBILE</tag>
+<status status="PASS" starttime="20240620 10:58:30.865" endtime="20240620 10:59:00.923" />
+</test>
+<test id="s1-s1-t2" name="TC05: Invalid login check on mobile" line="46">
+<kw name="Open the broswer" library="mikes_steps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${baseurl}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240620 10:59:02.458" level="INFO">Opening browser 'Chrome' to base url 'https://www.mikeshard.com/'.</msg>
+<msg timestamp="20240620 10:59:03.765" level="WARN">The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240620 10:59:03.781" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20240620 10:59:02.450" endtime="20240620 10:59:23.129" />
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240620 10:59:23.130" endtime="20240620 10:59:23.334" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240620 10:59:28.334" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240620 10:59:23.334" endtime="20240620 10:59:28.336" />
+</kw>
+<status status="PASS" starttime="20240620 10:59:02.450" endtime="20240620 10:59:28.339" />
+</kw>
+<kw name="Enter date of birth then submit the age gate and verify the message" library="mikes_steps">
+<arg>01</arg>
+<arg>01</arg>
+<arg>2024</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-month</arg>
+<arg>${month}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:28.344" level="INFO">Typing text '01' into text field 'id:ag-month'.</msg>
+<status status="PASS" starttime="20240620 10:59:28.344" endtime="20240620 10:59:28.739" />
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-day</arg>
+<arg>${day}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:28.739" level="INFO">Typing text '01' into text field 'id:ag-day'.</msg>
+<status status="PASS" starttime="20240620 10:59:28.739" endtime="20240620 10:59:29.045" />
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-year</arg>
+<arg>${year}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:29.048" level="INFO">Typing text '2024' into text field 'id:ag-year'.</msg>
+<status status="PASS" starttime="20240620 10:59:29.048" endtime="20240620 10:59:29.305" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:ag-confirm</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:29.312" level="INFO">Clicking element 'id:ag-confirm'.</msg>
+<status status="PASS" starttime="20240620 10:59:29.305" endtime="20240620 10:59:29.569" />
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${msg}</var>
+<arg>xpath=//p[text()='Sorry about that. You must be 21+ to enter.']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:29.753" level="INFO">${msg} = Sorry about that. You must be 21+ to enter.</msg>
+<status status="PASS" starttime="20240620 10:59:29.569" endtime="20240620 10:59:29.756" />
+</kw>
+<status status="PASS" starttime="20240620 10:59:28.339" endtime="20240620 10:59:29.760" />
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20240620 10:59:29.763" endtime="20240620 10:59:29.914" />
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240620 10:59:29.914" endtime="20240620 10:59:29.917" />
+</kw>
+<tag>MOBILE</tag>
+<status status="PASS" starttime="20240620 10:59:02.445" endtime="20240620 10:59:29.920" />
+</test>
+<test id="s1-s1-t3" name="TC06: Limoda page content on mobile" line="52">
+<kw name="Open the broswer" library="mikes_steps">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${baseurl}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240620 10:59:31.538" level="INFO">Opening browser 'Chrome' to base url 'https://www.mikeshard.com/'.</msg>
+<msg timestamp="20240620 10:59:33.190" level="WARN">The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240620 10:59:33.197" level="INFO">Completed setup!</msg>
+<status status="PASS" starttime="20240620 10:59:31.538" endtime="20240620 10:59:53.539" />
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240620 10:59:53.547" endtime="20240620 10:59:53.672" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240620 10:59:58.673" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240620 10:59:53.672" endtime="20240620 10:59:58.674" />
+</kw>
+<status status="PASS" starttime="20240620 10:59:31.533" endtime="20240620 10:59:58.674" />
+</kw>
+<kw name="Enter date of birth then submit the age gate and verify the presence of the options" library="mikes_steps">
+<arg>01</arg>
+<arg>01</arg>
+<arg>2000</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-month</arg>
+<arg>${month}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:58.674" level="INFO">Typing text '01' into text field 'id:ag-month'.</msg>
+<status status="PASS" starttime="20240620 10:59:58.674" endtime="20240620 10:59:59.167" />
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-day</arg>
+<arg>${day}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:59.167" level="INFO">Typing text '01' into text field 'id:ag-day'.</msg>
+<status status="PASS" starttime="20240620 10:59:59.167" endtime="20240620 10:59:59.689" />
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:ag-year</arg>
+<arg>${year}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240620 10:59:59.689" level="INFO">Typing text '2000' into text field 'id:ag-year'.</msg>
+<status status="PASS" starttime="20240620 10:59:59.689" endtime="20240620 11:00:00.000" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:ag-confirm</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:00.005" level="INFO">Clicking element 'id:ag-confirm'.</msg>
+<status status="PASS" starttime="20240620 11:00:00.003" endtime="20240620 11:00:00.305" />
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>https://www.mikeshard.com/</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20240620 11:00:00.408" level="INFO">Current location is 'https://www.mikeshard.com/'.</msg>
+<status status="PASS" starttime="20240620 11:00:00.309" endtime="20240620 11:00:00.410" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${managecookies-mike}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:00.413" level="INFO">Clicking element 'xpath=//button[@id='onetrust-pc-btn-handler']'.</msg>
+<status status="PASS" starttime="20240620 11:00:00.412" endtime="20240620 11:00:00.960" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${managechoices}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:00.965" level="INFO">Clicking element 'css:button.onetrust-close-btn-handler'.</msg>
+<status status="PASS" starttime="20240620 11:00:00.965" endtime="20240620 11:00:01.211" />
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${hamburger}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:01.211" level="INFO">Clicking element 'css:div.hamburger'.</msg>
+<status status="PASS" starttime="20240620 11:00:01.211" endtime="20240620 11:00:01.478" />
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Flavour-tab}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240620 11:00:01.495" endtime="20240620 11:00:02.247" />
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<arg>${Flavour-tab}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<msg timestamp="20240620 11:00:02.529" level="INFO">Element 'xpath= (//div[@id="navbarNav"]/div/ul/li/a)[1]' is displayed.</msg>
+<status status="PASS" starttime="20240620 11:00:02.247" endtime="20240620 11:00:02.529" />
+</kw>
+<status status="PASS" starttime="20240620 10:59:58.674" endtime="20240620 11:00:02.535" />
+</kw>
+<kw name="Select the desired navigation menu" library="mikes_steps">
+<arg>LIMONADA</arg>
+<kw name="Create List" library="BuiltIn">
+<var>@{Expected-navigation-menu}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20240620 11:00:02.535" level="INFO">@{Expected-navigation-menu} = [ ]</msg>
+<status status="PASS" starttime="20240620 11:00:02.535" endtime="20240620 11:00:02.543" />
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${navigation-menu}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240620 11:00:02.543" endtime="20240620 11:00:02.785" />
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{nav-bar-locators}</var>
+<arg>${navigation-menu}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20240620 11:00:02.901" level="INFO">@{nav-bar-locators} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5016")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd...</msg>
+<status status="PASS" starttime="20240620 11:00:02.788" endtime="20240620 11:00:02.903" />
+</kw>
+<for flavor="IN">
+<var>${nav-bar-name}</var>
+<value>@{nav-bar-locators}</value>
+<iter>
+<var name="${nav-bar-name}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5016")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nav-menu-list}</var>
+<arg>${nav-bar-name}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:02.989" level="INFO">${nav-menu-list} = FLAVORS</msg>
+<status status="PASS" starttime="20240620 11:00:02.908" endtime="20240620 11:00:02.990" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${Expected-navigation-menu}</arg>
+<arg>${nav-menu-list}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:02.993" endtime="20240620 11:00:02.994" />
+</kw>
+<if>
+<branch type="IF" condition="'${nav-menu-list}' == '${desired-menu}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${nav-bar-name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240620 11:00:02.998" endtime="20240620 11:00:02.998" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240620 11:00:03.000" endtime="20240620 11:00:03.001" />
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20240620 11:00:03.004" endtime="20240620 11:00:03.005" />
+</kw>
+<status status="NOT RUN" starttime="20240620 11:00:02.997" endtime="20240620 11:00:03.007" />
+</branch>
+<status status="PASS" starttime="20240620 11:00:02.996" endtime="20240620 11:00:03.010" />
+</if>
+<status status="PASS" starttime="20240620 11:00:02.907" endtime="20240620 11:00:03.010" />
+</iter>
+<iter>
+<var name="${nav-bar-name}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5017")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nav-menu-list}</var>
+<arg>${nav-bar-name}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:03.122" level="INFO">${nav-menu-list} = ZERO SUGAR</msg>
+<status status="PASS" starttime="20240620 11:00:03.013" endtime="20240620 11:00:03.122" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${Expected-navigation-menu}</arg>
+<arg>${nav-menu-list}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:03.122" endtime="20240620 11:00:03.122" />
+</kw>
+<if>
+<branch type="IF" condition="'${nav-menu-list}' == '${desired-menu}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${nav-bar-name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20240620 11:00:03.137" endtime="20240620 11:00:03.137" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20240620 11:00:03.137" endtime="20240620 11:00:03.137" />
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<status status="NOT RUN" starttime="20240620 11:00:03.153" endtime="20240620 11:00:03.153" />
+</kw>
+<status status="NOT RUN" starttime="20240620 11:00:03.137" endtime="20240620 11:00:03.153" />
+</branch>
+<status status="PASS" starttime="20240620 11:00:03.137" endtime="20240620 11:00:03.153" />
+</if>
+<status status="PASS" starttime="20240620 11:00:03.012" endtime="20240620 11:00:03.153" />
+</iter>
+<iter>
+<var name="${nav-bar-name}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5018")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${nav-menu-list}</var>
+<arg>${nav-bar-name}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:03.248" level="INFO">${nav-menu-list} = LIMONADA</msg>
+<status status="PASS" starttime="20240620 11:00:03.167" endtime="20240620 11:00:03.248" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${Expected-navigation-menu}</arg>
+<arg>${nav-menu-list}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:03.248" endtime="20240620 11:00:03.248" />
+</kw>
+<if>
+<branch type="IF" condition="'${nav-menu-list}' == '${desired-menu}'">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${nav-bar-name}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:03.267" level="INFO">Clicking element '&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5018")&gt;'.</msg>
+<status status="PASS" starttime="20240620 11:00:03.267" endtime="20240620 11:00:03.471" />
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240620 11:00:07.472" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20240620 11:00:03.471" endtime="20240620 11:00:07.472" />
+</kw>
+<kw name="Exit For Loop" library="BuiltIn">
+<doc>Stops executing the enclosing FOR loop.</doc>
+<msg timestamp="20240620 11:00:07.476" level="INFO">Exiting for loop altogether.</msg>
+<status status="PASS" starttime="20240620 11:00:07.476" endtime="20240620 11:00:07.482" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:03.267" endtime="20240620 11:00:07.482" />
+</branch>
+<status status="PASS" starttime="20240620 11:00:03.267" endtime="20240620 11:00:07.482" />
+</if>
+<status status="PASS" starttime="20240620 11:00:03.167" endtime="20240620 11:00:07.482" />
+</iter>
+<status status="PASS" starttime="20240620 11:00:02.905" endtime="20240620 11:00:07.492" />
+</for>
+<kw name="Log" library="BuiltIn">
+<arg>${Expected-navigation-menu}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240620 11:00:07.492" level="INFO">['FLAVORS', 'ZERO SUGAR', 'LIMONADA']</msg>
+<status status="PASS" starttime="20240620 11:00:07.492" endtime="20240620 11:00:07.492" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:02.535" endtime="20240620 11:00:07.507" />
+</kw>
+<kw name="Banner image description should be:" library="mikes_steps">
+<arg>${para-data}</arg>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${description}</var>
+<arg>xpath =//*[contains(text(),'Discover')]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:07.757" level="INFO">${description} = Discover Mike&#8217;s Limonada Fresca, a refreshing new twist on traditional Mexican Aguas Frescas recipes with a rush of lime and lemon flavors sourced from family-owned farms. We blend our luscious citrus...</msg>
+<status status="PASS" starttime="20240620 11:00:07.507" endtime="20240620 11:00:07.760" />
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${description}</arg>
+<arg>${para-data}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240620 11:00:07.762" endtime="20240620 11:00:07.763" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:07.507" endtime="20240620 11:00:07.765" />
+</kw>
+<kw name="Check the presence of products available in Product carousel" library="mikes_steps">
+<arg>${list-products-user}</arg>
+<kw name="Create List" library="BuiltIn">
+<var>@{actual-products}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20240620 11:00:07.768" level="INFO">@{actual-products} = [ ]</msg>
+<status status="PASS" starttime="20240620 11:00:07.768" endtime="20240620 11:00:07.771" />
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>@{products}</var>
+<arg>${product-list}</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20240620 11:00:07.884" level="INFO">@{products} = [ &lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5023")&gt; | &lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd...</msg>
+<status status="PASS" starttime="20240620 11:00:07.773" endtime="20240620 11:00:07.885" />
+</kw>
+<for flavor="IN">
+<var>${individual-productlocator}</var>
+<value>@{products}</value>
+<iter>
+<var name="${individual-productlocator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5023")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product-name}</var>
+<arg>${individual-productlocator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:07.971" level="INFO">${product-name} = CITRUS LIMONADA</msg>
+<status status="PASS" starttime="20240620 11:00:07.890" endtime="20240620 11:00:07.973" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${actual-products}</arg>
+<arg>${product-name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:07.976" endtime="20240620 11:00:07.977" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:07.889" endtime="20240620 11:00:07.980" />
+</iter>
+<iter>
+<var name="${individual-productlocator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5024")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product-name}</var>
+<arg>${individual-productlocator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:08.080" level="INFO">${product-name} = PINEAPPLE GUAVA</msg>
+<status status="PASS" starttime="20240620 11:00:07.983" endtime="20240620 11:00:08.082" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${actual-products}</arg>
+<arg>${product-name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:08.086" endtime="20240620 11:00:08.087" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:07.982" endtime="20240620 11:00:08.090" />
+</iter>
+<iter>
+<var name="${individual-productlocator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5025")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product-name}</var>
+<arg>${individual-productlocator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:08.205" level="INFO">${product-name} = MANGONADA</msg>
+<status status="PASS" starttime="20240620 11:00:08.094" endtime="20240620 11:00:08.205" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${actual-products}</arg>
+<arg>${product-name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:08.205" endtime="20240620 11:00:08.213" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:08.094" endtime="20240620 11:00:08.216" />
+</iter>
+<iter>
+<var name="${individual-productlocator}">&lt;selenium.webdriver.remote.webelement.WebElement (session="2450983b7e062230bd5df8d49b02732e449fcc49", element="5026")&gt;</var>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${product-name}</var>
+<arg>${individual-productlocator}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240620 11:00:08.329" level="INFO">${product-name} = WATERMELON LIME</msg>
+<status status="PASS" starttime="20240620 11:00:08.216" endtime="20240620 11:00:08.329" />
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${actual-products}</arg>
+<arg>${product-name}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20240620 11:00:08.329" endtime="20240620 11:00:08.329" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:08.216" endtime="20240620 11:00:08.340" />
+</iter>
+<status status="PASS" starttime="20240620 11:00:07.888" endtime="20240620 11:00:08.346" />
+</for>
+<kw name="Log" library="BuiltIn">
+<arg>${actual-products}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240620 11:00:08.346" level="INFO">['CITRUS LIMONADA', 'PINEAPPLE GUAVA', 'MANGONADA', 'WATERMELON LIME']</msg>
+<status status="PASS" starttime="20240620 11:00:08.346" endtime="20240620 11:00:08.346" />
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<arg>${list-products-user} == ${actual-products}</arg>
+<arg>Log</arg>
+<arg>list are Equal</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>product not matching</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<kw name="Log" library="BuiltIn">
+<arg>list are Equal</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240620 11:00:08.358" level="INFO">list are Equal</msg>
+<status status="PASS" starttime="20240620 11:00:08.358" endtime="20240620 11:00:08.358" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:08.358" endtime="20240620 11:00:08.358" />
+</kw>
+<status status="PASS" starttime="20240620 11:00:07.768" endtime="20240620 11:00:08.372" />
+</kw>
+<kw name="Delete All Cookies" library="SeleniumLibrary">
+<doc>Deletes all cookies.</doc>
+<status status="PASS" starttime="20240620 11:00:08.374" endtime="20240620 11:00:08.547" />
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240620 11:00:08.547" endtime="20240620 11:00:08.547" />
+</kw>
+<tag>MOBILE</tag>
+<status status="PASS" starttime="20240620 10:59:31.532" endtime="20240620 11:00:08.547" />
+</test>
+<status status="PASS" starttime="20240620 10:58:30.181" endtime="20240620 11:00:10.148" />
+</suite>
+<status status="PASS" starttime="20240620 10:58:30.181" endtime="20240620 11:00:10.148" />
+</suite><errors>
+<msg timestamp="20240620 10:58:33.421" level="WARN">The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240620 10:59:03.765" level="WARN">The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg timestamp="20240620 10:59:33.190" level="WARN">The chromedriver version (125.0.6422.76) detected in PATH at C:\Drivers\chromedriver.exe might not be compatible with the detected chrome version (126.0.6478.63); currently, chromedriver 126.0.6478.62 is recommended for chrome 126.*, so it is advised to delete the driver in PATH and retry</msg>
+</errors>
+</robot>
