@@ -1,5 +1,8 @@
-datasources:af26aebf00e2e3d6360677f3ea1c79df75d6ac76
-commandlineoptions:e9768059f0357f7c31c5b4db0b68ed591d25fca3
+datasources:32db2ce77cdb8aa02371394ee305b318f4cd2d40
+commandlineoptions:1bbcf61673825e8fc02cce455b3c61e083d9d3f2
 suitesfrom:no-suites-from-option
-file:7967cdb7f037eab129231d9dfbc49ba7d383486f
---suite Tests.Website Testing
+file:2b47547c46583442168001c8758044e57cfdc6b3
+--suite UI.Contact Form
+--suite UI.Mikes
+--suite UI.Raspberry Product
+--suite UI.Website Testing

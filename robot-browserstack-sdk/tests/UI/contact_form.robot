@@ -3,7 +3,7 @@ Documentation   Filling of the contact details
 Suite Setup   Setup for url    ${url}    ${ENVIRONMENT}
 Test Teardown   Close Browser session after the end
 Resource    ../../steps/contact_form_steps.robot
-Library    ../customLibraries/custom_email.py
+Library    ../../customLibraries/custom_email.py
 
 *** Test Cases ***
 

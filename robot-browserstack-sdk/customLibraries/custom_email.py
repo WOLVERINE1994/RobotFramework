@@ -1,7 +1,7 @@
 import random
 import string
-from robot.api.deco import library, keyword
-from robot.libraries.BuiltIn import BuiltIn
+from robot.api.deco import library, keyword # type: ignore
+from robot.libraries.BuiltIn import BuiltIn # type: ignore
 
 @library
 class custom_email:

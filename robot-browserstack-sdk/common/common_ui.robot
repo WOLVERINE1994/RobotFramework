@@ -14,13 +14,14 @@ Resource           ../pages/website_testing_variables.robot
 ...    https://au-dev.whiteclaw.com/=//div/picture/img[@id='age-gate-logo']
 ...    https://www.mikesharder.com/=//div/a[@href='/']/picture/img
 
-${url}         https://at.whiteclaw.com/en/
+${url}         https://at-dev.whiteclaw.com/en/
 ${url2}         https://au-dev.whiteclaw.com/
 ${url_mikeshared}        https://www.mikesharder.com/
 ${browser_name}         Chrome
-${OUTPUTDIR}        C:/Users/Prateek/Downloads/robot-browserstack-sdkLatest/robot-browserstack-sdkLatest
+${OUTPUTDIR}        C:/Users/Prateek/Downloads/PROJECTS/browserstack-robot Framework/robot-browserstack-sdkLatest/robot-browserstack-sdkLatest/robot-browserstack-sdkLatest
 ${timeout}        20
 ${close_privacy}          xpath=//button[@aria-label='close modal']
+
 *** Keywords ***
 SuiteSetup
     [Arguments]    ${url}    ${env}

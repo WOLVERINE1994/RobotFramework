@@ -10,3 +10,4 @@ ${product_name}    css:div div.single-flavor-drink-description h1
 ${paragraph}       css:div div.single-flavor-drink-description p
 ${hamburger}    css:div.hamburger
 ${flavouredItems}    css:.flavor-drink a h4 span
+${footer_locators}    css:div ul li.nav-item

@@ -7,7 +7,8 @@ Resource        ../../steps/raspberry_product_steps.robot
 *** Test Cases ***
 Verification of the Raspberry product description
     [Tags]     WEB
-    Wait Until Navigation Tabs Are Located    
+    Wait Until Navigation Tabs Are Located
+    Verify the presence of footers
     Click on tab with Name      ${tab_name}
     Click on the flavoured drink     ${flavoureDrink}
     Verifying the flavoured drink description
@@ -18,4 +19,3 @@ Verification of the Raspberry product description on mobile
     Click on tab with Name      ${tab_name}
     Click on the flavoured drink     ${flavoureDrink}
     Verifying the flavoured drink description
-    

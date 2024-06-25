@@ -6,13 +6,14 @@ Resource        ../../steps/website_testing_steps.robot
 *** Test Cases ***
 Existance of Limonada flavors
     [Tags]     WEB    REGRESSION
+    
     Verify that the Page Should Contain Flavour         ${flavor}
     Verify that the Page should contain Innovation         ${Innovation}
     Verify that the Page should contains Find tab        ${Find}
     Verify that the Page should contains contact tab     ${contact}
     Verify that the Page should contains FAQ tab      ${faq}
     Click on the Flavour     ${flavor}
-    Wait Until Element Is Visible        ${lemonade}         timeout=20
+    Wait Until Element Is Visible        ${lemonade}         ${timeout}
     Scroll Element Into View        ${lemonade}
     Page Should Contain Image        ${item}
     Click Image     ${item}

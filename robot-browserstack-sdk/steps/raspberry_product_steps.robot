@@ -23,7 +23,17 @@ Wait Until Navigation Tabs Are Located
    ${tab_count}    Get Length    ${actual_tabs}
    Should Be Equal As Numbers    ${tab_count}    6
    
-
+Verify the presence of footers
+    Wait Until Element Is Visible    ${footer_locators}
+    @{footers}    Get WebElements    ${footer_locators}
+    @{footers_headers} =     Create List
+    FOR    ${footer}    IN    @{footers}
+        ${footernames}    Get Text    ${footer}
+        Append To List    ${footers_headers}    ${footernames}
+    END
+    Log    ${footers_headers}
+    ${tab_count}    Get Length    ${footers_headers}
+    Should Be Equal As Numbers    ${tab_count}    5
 Click on tab with Name   
     [Arguments]    ${tab_name}
     Wait Until Element Is Visible     ${navigation_tabs}    ${timeout}
